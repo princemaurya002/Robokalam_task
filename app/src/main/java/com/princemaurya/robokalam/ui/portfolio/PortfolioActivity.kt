@@ -12,6 +12,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.textfield.TextInputLayout
 import com.princemaurya.robokalam.R
@@ -25,7 +26,7 @@ class PortfolioActivity : AppCompatActivity() {
     private lateinit var db: AppDatabase
     private lateinit var adapter: PortfolioAdapter
     private lateinit var recyclerView: RecyclerView
-    private lateinit var fabAdd: FloatingActionButton
+    private lateinit var fabAdd: ExtendedFloatingActionButton
     private lateinit var formContainer: View
     private lateinit var listContainer: View
     private lateinit var skillsContainer: LinearLayout
@@ -60,7 +61,7 @@ class PortfolioActivity : AppCompatActivity() {
 
     private fun initViews() {
         recyclerView = findViewById(R.id.recyclerView)
-        fabAdd = findViewById(R.id.fabAdd)
+        fabAdd = findViewById<ExtendedFloatingActionButton>(R.id.fabAdd)
         formContainer = findViewById(R.id.formContainer)
         listContainer = findViewById(R.id.listContainer)
         skillsContainer = findViewById(R.id.skillsContainer)

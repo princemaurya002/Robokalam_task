@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var userPreferencesManager: UserPreferencesManager
     private lateinit var tvWelcome: TextView
+    private lateinit var tvStudentName: TextView
+    private lateinit var tvWelcomeSubtitle: TextView
     private lateinit var tvQuoteOfDay: TextView
     private lateinit var cardPortfolio: MaterialCardView
     private lateinit var cardQuotes: MaterialCardView
@@ -43,6 +45,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun initViews() {
         tvWelcome = findViewById(R.id.tvWelcome)
+        tvStudentName = findViewById(R.id.tvStudentName)
+        tvWelcomeSubtitle = findViewById(R.id.tvWelcomeSubtitle)
         tvQuoteOfDay = findViewById(R.id.tvQuoteOfDay)
         cardPortfolio = findViewById(R.id.cardPortfolio)
         cardQuotes = findViewById(R.id.cardQuotes)
@@ -64,8 +68,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun displayWelcomeMessage() {
+        tvWelcome.text = "Welcome"
         val userName = userPreferencesManager.getUserName() ?: "Student"
-        tvWelcome.text = getString(R.string.welcome_message, userName)
+        tvStudentName.text = userName
+        tvWelcomeSubtitle.text = getString(R.string.welcome_subtitle, userName)
     }
 
     private fun displayQuoteOfDay() {

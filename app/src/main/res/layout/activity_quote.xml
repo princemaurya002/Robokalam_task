@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_light">
+    android:background="@color/bg_blue">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -73,9 +73,8 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="24dp"
                         android:drawablePadding="8dp"
-                        android:textColor="@color/error_red"
-                        android:visibility="gone"
-                        app:drawableStartCompat="@drawable/ic_error" />
+                        android:textColor="#E02323"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/tvQuote"
@@ -85,7 +84,7 @@
                         android:gravity="center"
                         android:lineSpacingExtra="8dp"
                         android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-                        android:textColor="@color/text_primary"
+                        android:textColor="@color/black"
                         android:textSize="18sp"
                         android:textStyle="italic" />
 
@@ -96,28 +95,7 @@
                         android:layout_gravity="end"
                         android:layout_marginTop="16dp"
                         android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-                        android:textColor="@color/text_secondary"
                         android:textStyle="bold" />
-
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btnRefresh"
-                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="24dp"
-                        android:text="@string/refresh_quote"
-                        app:icon="@drawable/ic_refresh"
-                        app:strokeColor="@color/theme_blue" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="16dp"
-                        android:text="@string/quote_attribution"
-                        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                        android:textColor="@color/text_secondary" />
 
                 </LinearLayout>
 

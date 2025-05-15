@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_light">
+    android:background="@color/bg_blue">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
-                app:cardBackgroundColor="@color/theme_blue"
+                app:cardBackgroundColor="#E40060D6"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="4dp">
 
@@ -54,15 +54,25 @@
                         android:id="@+id/tvWelcome"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:text="Welcome"
                         android:textColor="@android:color/white"
                         android:textSize="24sp"
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/tvStudentName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvWelcomeSubtitle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="@string/welcome_subtitle"
                         android:textColor="@android:color/white"
                         android:textSize="16sp" />
 
@@ -84,6 +94,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
+                    android:background="#400060D6"
                     android:padding="20dp">
 
                     <TextView
@@ -92,7 +103,7 @@
                         android:drawablePadding="8dp"
                         android:text="@string/quote_of_day"
                         android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-                        android:textColor="@color/theme_blue"
+                        android:textColor="#0060D6"
                         android:textStyle="bold"
                         app:drawableStartCompat="@drawable/ic_quote" />
 
@@ -110,14 +121,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <!-- Features Grid -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:text="@string/features"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-                android:textColor="@color/text_primary"
-                android:textStyle="bold" />
+
 
             <GridLayout
                 android:layout_width="match_parent"
@@ -137,7 +141,7 @@
                     android:focusable="true"
                     app:cardCornerRadius="16dp"
                     app:cardElevation="4dp"
-                    app:rippleColor="@color/ripple_light">
+                    app:rippleColor="#80009CD6">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -150,8 +154,8 @@
                         <ImageView
                             android:layout_width="48dp"
                             android:layout_height="48dp"
-                            android:background="@drawable/circle_background_blue"
                             android:padding="12dp"
+                            android:background="@drawable/circle_background_purple"
                             android:src="@drawable/ic_portfolio"
                             android:tint="@android:color/white" />
 
@@ -161,17 +165,10 @@
                             android:layout_marginTop="12dp"
                             android:text="@string/portfolio"
                             android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-                            android:textColor="@color/text_primary"
+                            android:textColor="@color/black"
                             android:textStyle="bold" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:gravity="center"
-                            android:text="@string/portfolio_description"
-                            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                            android:textColor="@color/text_secondary" />
+
 
                     </LinearLayout>
 
@@ -189,7 +186,7 @@
                     android:focusable="true"
                     app:cardCornerRadius="16dp"
                     app:cardElevation="4dp"
-                    app:rippleColor="@color/ripple_light">
+                    app:rippleColor="#97009CD6">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -213,17 +210,8 @@
                             android:layout_marginTop="12dp"
                             android:text="@string/quotes"
                             android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-                            android:textColor="@color/text_primary"
+                            android:textColor="@color/black"
                             android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:gravity="center"
-                            android:text="@string/quotes_description"
-                            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                            android:textColor="@color/text_secondary" />
 
                     </LinearLayout>
 
@@ -241,7 +229,7 @@
                     android:focusable="true"
                     app:cardCornerRadius="16dp"
                     app:cardElevation="4dp"
-                    app:rippleColor="@color/ripple_light">
+                    app:rippleColor="#9F009CD6">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -254,8 +242,8 @@
                         <ImageView
                             android:layout_width="48dp"
                             android:layout_height="48dp"
-                            android:background="@drawable/circle_background_purple"
                             android:padding="12dp"
+                            android:background="@drawable/circle_background_yellow"
                             android:src="@drawable/ic_about"
                             android:tint="@android:color/white" />
 
@@ -265,17 +253,8 @@
                             android:layout_marginTop="12dp"
                             android:text="@string/about"
                             android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-                            android:textColor="@color/text_primary"
+                            android:textColor="@color/black"
                             android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:gravity="center"
-                            android:text="@string/about_description"
-                            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                            android:textColor="@color/text_secondary" />
 
                     </LinearLayout>
 

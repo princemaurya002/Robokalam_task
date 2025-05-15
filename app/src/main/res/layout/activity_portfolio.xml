@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_light">
+    android:background="@color/bg_blue">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -51,14 +51,14 @@
                 android:layout_height="120dp"
                 android:layout_marginBottom="16dp"
                 android:src="@drawable/ic_empty_portfolio"
-                android:tint="@color/text_secondary" />
+                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/no_portfolios"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-                android:textColor="@color/text_secondary" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -67,7 +67,7 @@
                 android:gravity="center"
                 android:text="@string/add_portfolio_hint"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                android:textColor="@color/text_secondary" />
+                />
 
         </LinearLayout>
 
@@ -89,7 +89,7 @@
         android:id="@+id/formContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/background_light"
+        android:background="@color/bg_blue"
         android:clipToPadding="false"
         android:overScrollMode="never"
         android:padding="16dp"
@@ -114,7 +114,7 @@
                     android:drawablePadding="8dp"
                     android:text="@string/add_portfolio"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                    android:textColor="@color/text_primary"
+                    android:textColor="@color/black"
                     android:textStyle="bold"
                     app:drawableStartCompat="@drawable/ic_add" />
 
@@ -159,7 +159,7 @@
                     android:drawablePadding="8dp"
                     android:text="@string/skills"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-                    android:textColor="@color/text_primary"
+                    android:textColor="@color/black"
                     android:textStyle="bold"
                     app:drawableStartCompat="@drawable/ic_skills" />
 
@@ -188,7 +188,7 @@
                     android:drawablePadding="8dp"
                     android:text="@string/project_details"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-                    android:textColor="@color/text_primary"
+                    android:textColor="@color/black"
                     android:textStyle="bold"
                     app:drawableStartCompat="@drawable/ic_project" />
 

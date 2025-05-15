@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_light">
+    android:background="@color/bg_blue">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -47,12 +47,11 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical"
-                    android:padding="24dp">
+                    android:padding="8dp">
 
                     <ImageView
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:layout_marginBottom="16dp"
                         android:contentDescription="@string/app_logo"
                         android:src="@drawable/logo" />
 
@@ -64,14 +63,6 @@
                         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
                         android:textColor="@color/theme_blue"
                         android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/app_version"
-                        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                        android:textColor="@color/text_secondary" />
-
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
@@ -84,41 +75,6 @@
                 app:cardCornerRadius="16dp"
                 app:cardElevation="4dp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="24dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:drawablePadding="8dp"
-                        android:text="@string/about_title"
-                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:textColor="@color/text_primary"
-                        android:textStyle="bold"
-                        app:drawableStartCompat="@drawable/ic_info" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:lineSpacingExtra="8dp"
-                        android:text="@string/about_message"
-                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-                        android:textColor="@color/text_primary" />
-
-                </LinearLayout>
-
-            </com.google.android.material.card.MaterialCardView>
-
-            <!-- Contact Card -->
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -130,57 +86,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:drawablePadding="8dp"
-                        android:text="@string/contact_us"
+                        android:text="@string/Details"
                         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:textColor="@color/text_primary"
-                        android:textStyle="bold"
-                        app:drawableStartCompat="@drawable/ic_contact" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:layout_gravity="center_vertical"
-                            android:src="@drawable/ic_email"
-                            android:tint="@color/theme_blue" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
-                            android:text="@string/contact_email"
-                            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-                            android:textColor="@color/text_primary" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:layout_gravity="center_vertical"
-                            android:src="@drawable/ic_phone"
-                            android:tint="@color/theme_blue" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
-                            android:text="@string/contact_phone"
-                            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-                            android:textColor="@color/text_primary" />
-
-                    </LinearLayout>
+                        android:textColor="@color/black"
+                         />
 
                 </LinearLayout>
 
